@@ -5,7 +5,6 @@ before_install:
   - brew upgrade node
   - brew install npm
   - brew install ios-deploy
-  - xcode-select --install
   - npm install -g appium
 #language: python
 #python:
