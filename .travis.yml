@@ -6,7 +6,8 @@ before_install:
   - brew install npm
   - brew install ios-deploy
   - npm install -g appium
-  - pip install Appium-Python-Client
+  - pip3 install Appium-Python-Client
+  #- python setup.py install
 #language: python
 #python:
 #  - "3.6"
