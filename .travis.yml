@@ -2,8 +2,8 @@ os: osx
 osx_image: xcode10
 before_install:
   - brew update
+  - brew upgrade node
   - brew install npm
-  - brew install node
   - brew install ios-deploy
   - xcode-select --install
   - npm install -g appium
