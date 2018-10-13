@@ -19,10 +19,10 @@ class Tests(unittest.TestCase):
  
     def test_compute_sum(self):  
         self.driver.implicitly_wait(80)
-        first_field = page.input_first_field(3)
-        second_field = page.input_second_field(2)
-        compute = page.copute_sum()
-        result = page.get_compute_sum()
+        self.page.input_first_field(3)
+        self.page.input_second_field(2)
+        self.page.copute_sum()
+        result = self.page.get_compute_sum()
         self.assertEqual(result, "5")  
 
 if __name__ == '__main__':
