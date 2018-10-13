@@ -18,6 +18,7 @@ class Tests(unittest.TestCase):
         os.system(cmd)
  
     def test_compute_sum(self):  
+        driver.implicitly_wait(80)
         first_field = page.input_first_field(self,3)
         second_field = page.input_second_field(self,2)
         compute = page.copute_sum(self)
