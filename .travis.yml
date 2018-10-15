@@ -22,12 +22,11 @@ script:
   # - nohup appium > myprogram.out &
   - appium &
   - sleep 7s
-  - cat myprogram.out 
   - ls -l
-  - cat myprogram.out
+  - pwd
   - cd /Users/travis/build/ArsenUa/TestMobileProject
-  - cat myprogram.out
+  - ls -l app/
   - sleep 7s
-  - cat myprogram.out
+  - echo "\033[0;31m[INFO] Staring tesing\e[0m"
   - python3 simulatorTest.py
-  - cat myprogram.out
+  - echo "\033[0;31m[INFO] Finish tesing\e[0m"
