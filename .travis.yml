@@ -18,6 +18,8 @@ before_install:
 script:
   - echo "hello world"
   # - nohup appium > myprogram.out &
+  # - nohup appium > myprogram.out &
+  # - nohup appium > myprogram.out &
   - appium &
   - sleep 7s
   - cat myprogram.out 
