@@ -17,7 +17,8 @@ before_install:
 # command to run tests
 script:
   - echo "hello world"
-  - nohup appium > myprogram.out &
+  # - nohup appium > myprogram.out &
+  - appium &
   - cat myprogram.out 
   - python3 simulatorTest.py
   - cat myprogram.out
