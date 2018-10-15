@@ -19,6 +19,10 @@ script:
   - echo "hello world"
   # - nohup appium > myprogram.out &
   - appium &
+  - sleep 7s
   - cat myprogram.out 
+  - ls -l
+  - cd myFolder
+  - cat myprogram.out
   - python3 simulatorTest.py
   - cat myprogram.out
