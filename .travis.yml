@@ -22,6 +22,7 @@ script:
   - sleep 7s
   - cat myprogram.out 
   - ls -l
+  - cat myprogram.out
   - cd myFolder
   - cat myprogram.out
   - python3 simulatorTest.py
