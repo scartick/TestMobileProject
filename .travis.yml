@@ -25,7 +25,9 @@ script:
   - cat myprogram.out 
   - ls -l
   - cat myprogram.out
-  - cd myFolder
+  - cd /Users/travis/build/ArsenUa/TestMobileProject
+  - cat myprogram.out
+  - sleep 7s
   - cat myprogram.out
   - python3 simulatorTest.py
   - cat myprogram.out
